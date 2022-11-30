@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { PackageRoutingModule } from './package-routing.module';
 import { IndexComponent } from './index/index.component';
+import { CrearComponent } from './crear/crear.component';
 
 
 @NgModule({
   declarations: [
-    IndexComponent
+    IndexComponent,
+    CrearComponent
   ],
   imports: [
     CommonModule,

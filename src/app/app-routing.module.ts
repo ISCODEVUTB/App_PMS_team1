@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { BackComponent } from './plantilla/back/back.component';
 import { ErrorComponent } from './plantilla/error/error.component';
 import { InicioComponent } from './plantilla/inicio/inicio.component';
 
 const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
-  { path: '', pathMatch: 'full', redirectTo: '/inicio' },
+  { path: 'back', component: BackComponent},
+  { path: '', pathMatch: 'full', redirectTo: '/back' },
   { 
     path: 'seguridad', 
     loadChildren: () => import('./modulos/seguridad/seguridad.module')

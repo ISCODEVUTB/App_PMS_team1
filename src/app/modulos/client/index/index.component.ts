@@ -8,10 +8,10 @@ import { ClientService } from 'src/app/servicios/client.service';
   styleUrls: ['./index.component.css']
 })
 export class IndexComponent {
-  clients: Client[] = [];
+  client: Client[] = [];
   constructor(private clientServicio: ClientService) { }
   ngOnInit(): void {
     this.clientServicio.obtenerClients()
-    .subscribe(clients => this.clients = clients);
+    .subscribe(client => this.client = client);
   }
 }

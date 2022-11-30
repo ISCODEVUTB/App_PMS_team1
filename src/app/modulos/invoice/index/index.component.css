@@ -1,0 +1,16 @@
+.B1 {
+    margin-right: 4px;
+   }
+
+.A1{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+}
+
+.A1:hover{
+    background-color: transparent;
+    border: 2px solid green;
+    color: green;
+}
